@@ -1,0 +1,17 @@
+h1{
+    color: blueviolet;
+    background-color: yellow;
+}
+
+div{
+   background-color: rgb(99, 218, 139); 
+   color: white;
+   border-radius: 2px;
+   border-color: black;
+}
+
+body{
+    background-image: url(../Proyecto_08/img/kaka.jfif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
