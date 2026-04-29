@@ -16,6 +16,18 @@ body{
     background-size: cover;
 }
 
+table{
+    
+}
+
+tr{
+    border-bottom: black;
+}
+
+td{
+    background-color: aquamarine;
+    border-bottom: red;
+}
 
 
 
