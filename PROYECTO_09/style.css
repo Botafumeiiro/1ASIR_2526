@@ -8,8 +8,14 @@
 .astronauta{
  z-index: 3;
  position: absolute;
- height: 150px;
- width: 150px;
+ height: 50px;
+ width: 50px;
+ top: 100px;
+ left: 200px;
+ animation: animacion2 10s;
+ animation-delay: 1s;
+ animation-iteration-count: infinite;
+ animation-direction: reverse;
 }
 
 .cohete{
@@ -17,4 +23,42 @@
     position: absolute;
     height: 150px;
     width: 150px;
+    top: 220px;
+    left: 160px;
+    animation: animacion1 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-timing-function: ease-out;
+    animation-duration: alternate;
+}
+
+.luna{
+    position: absolute;
+    z-index: 2;
+    animation: animacion3 10s;
+    animation-iteration-count: infinite;
+    height: 50px; 
+    width: 50px;
+}
+
+@keyframes animacion1{
+    from{top: 220px; left: 160px;}
+    to{top: 100px; left: 300px;}
+}
+
+@keyframes animacion2{
+    0%{top: 100px; left: 200px;}
+    25%{top: 300px; left: 180px;}
+    50%{top: 300px; left: 250px;}
+    75%{top: 280px; left: 250px;}
+    85%{top: 150px; left: 300px;}
+    100%{top: 100px; left: 200px;}
+}
+
+@keyframes animacion3{
+    0%{top: 30px; left: 30px; background-color: aqua;}
+    25%{top: 350px; left: 30px; background-color: blueviolet;}
+    50%{top: 350px; left: 550px; background-color: darkgreen;}
+    75%{top: 30px; left: 550px; background-color: rgb(226, 197, 29);}
+    100%{top: 30px; left: 30px; background-color: floralwhite;}
 }
